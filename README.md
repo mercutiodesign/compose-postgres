@@ -12,10 +12,10 @@
 ## result
 * postgres running on 5432
   * user: `postgres`
-  * password: `changeme`
-* pgadmin4 running on 5050
-  * user: `pgadmin4@pgadmin.org`
-  * password: `admin`
+  * password: `password`
+* [pgadmin4 running on 80](http://localhost/)
+  * user: `postgres`
+  * password: `password`
 
 # configuration
 
