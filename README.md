@@ -28,9 +28,10 @@ Use hostname `postgres` for a local connection configured in pgadmin4
 
 ## postgres data
 
-By default this composition expects path `~/data/postgres` to be mapped to `/data/postgres` (container).
+The data of postgres and the configuration of pgadmin is stored in the `data` subdirectory of this repostiory.
 
-In order to change this on a MacOS properly, follow the [Docker for Mac :: File system sharing (osxfs) docs](https://docs.docker.com/docker-for-mac/osxfs/#namespaces).
+If you want to change it on mac OS there are some restrictions:
+[Docker for Mac :: File system sharing (osxfs) docs](https://docs.docker.com/docker-for-mac/osxfs/#namespaces).
 
 
 # tools
