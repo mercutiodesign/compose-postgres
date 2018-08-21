@@ -2,8 +2,8 @@
 * [docker](https://docs.docker.com/engine/installation/) installed
 * [docker-compose](https://docs.docker.com/compose/install/) installed
 
-If you have Windows 7, Windows 10 Home or any other windows version that isn't supported by the newest version use this one instead:
-* [docker toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/)
+If you have Windows 7, Windows 10 Home or any other Windows version that isn't supported by the newest version use this one instead:
+* [docker toolbox](https://github.com/docker/toolbox/releases/tag/v17.12.0-ce) (Version 17 works on Windows 7, Version 18 did not work)
 
 # setup
 
