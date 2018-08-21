@@ -5,7 +5,7 @@
 # setup
 
 ## steps
-1. `git clone https://github.com/jforge/compose-postgres.git`
+1. `git clone https://github.com/mercutiodesign/compose-postgres.git`
 2. `cd compose-postgres`
 3. `docker-compose up`
 
