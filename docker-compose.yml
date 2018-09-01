@@ -10,8 +10,6 @@ services:
       - dbdata:/var/lib/postgresql/data
     ports:
       - "5432:5432"
-    networks:
-      - postgres
     restart: unless-stopped
 
   pgadmin:
@@ -26,13 +24,7 @@ services:
       - "80:80"
     links:
       - postgres:postgres
-    networks:
-      - postgres
     restart: unless-stopped
-
-networks:
-  postgres:
-    driver: bridge
 
 volumes:
   dbdata: # this named docker volume store the database data
