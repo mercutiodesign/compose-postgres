@@ -2,13 +2,12 @@ version: '2'
 
 services:
   postgres:
-    image: postgres
+    image: postgres:alpine
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
-      PGDATA: /data/postgres
     volumes:
-       - ./data/postgres:/data/postgres
+      - dbdata:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     networks:
@@ -21,7 +20,8 @@ services:
       PGADMIN_DEFAULT_EMAIL: postgres
       PGADMIN_DEFAULT_PASSWORD: password
     volumes:
-       - ./data/pgadmin:/var/lib/pgadmin
+       - pgadmindata:/var/lib/pgadmin
+       - ./pgadmin:/var/lib/pgadmin/storage/postgres
     ports:
       - "80:80"
     links:
@@ -33,3 +33,7 @@ services:
 networks:
   postgres:
     driver: bridge
+
+volumes:
+  dbdata: # this named docker volume store the database data
+  pgadmindata: # this named docker volume store the pgadmin data
